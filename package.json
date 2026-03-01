@@ -1,0 +1,75 @@
+{
+  "name": "tul",
+  "version": "0.1.0",
+  "description": "Claude-level tool calling for Gemini. Fewer tokens. Zero config.",
+  "keywords": [
+    "gemini",
+    "google",
+    "ai",
+    "tool-calling",
+    "function-calling",
+    "llm",
+    "token-optimization",
+    "claude",
+    "agent",
+    "middleware"
+  ],
+  "author": "Akhil Ponnada",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akhilponnada/tul.git"
+  },
+  "homepage": "https://github.com/akhilponnada/tul#readme",
+  "bugs": {
+    "url": "https://github.com/akhilponnada/tul/issues"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@google/genai": ">=1.0.0"
+  },
+  "dependencies": {
+    "jsonrepair": "^3.8.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@google/genai": "^1.42.0",
+    "@types/node": "^20.11.0",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "dotenv": "^17.3.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.2.0"
+  }
+}
