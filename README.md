@@ -1,7 +1,7 @@
 <p align="center">
   <img src="https://img.shields.io/npm/v/tul-sdk?style=for-the-badge&color=blue" alt="npm version" />
   <img src="https://img.shields.io/npm/dm/tul-sdk?style=for-the-badge&color=green" alt="downloads" />
-  <img src="https://img.shields.io/github/license/akhilponnada/tul?style=for-the-badge" alt="license" />
+  <img src="https://img.shields.io/npm/l/tul-sdk?style=for-the-badge" alt="license" />
   <img src="https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge&logo=typescript" alt="typescript" />
 </p>
 
