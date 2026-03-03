@@ -157,7 +157,7 @@ import { Tul } from 'tul-sdk';
 
 const tul = new Tul({
   apiKey: process.env.GEMINI_API_KEY,
-  model: 'gemini-2.0-flash',
+  model: 'gemini-3-flash-preview',
 });
 
 // Register your tools
@@ -193,7 +193,7 @@ console.log(`Tokens saved: ${response.stats.tokensSaved}`);
 ```typescript
 const tul = new Tul({
   apiKey: process.env.GEMINI_API_KEY,
-  model: 'gemini-2.0-flash',
+  model: 'gemini-3-flash-preview',
 
   // Accuracy boosters
   forceToolCalling: true,       // Force tool use
@@ -218,7 +218,7 @@ const tul = new Tul({
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
 | `apiKey` | `string` | required | Gemini API key |
-| `model` | `string` | `'gemini-2.0-flash'` | Model name |
+| `model` | `string` | `'gemini-3-flash-preview'` | Model name |
 | `forceToolCalling` | `boolean \| 'auto'` | `false` | Force tool calls |
 | `enhanceDescriptions` | `boolean` | `false` | Auto-enhance tool descriptions |
 | `maxToolsPerRequest` | `number` | `5` | Max tools per request |
