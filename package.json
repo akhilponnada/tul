@@ -1,5 +1,5 @@
 {
-  "name": "tul",
+  "name": "tul-sdk",
   "version": "0.1.0",
   "description": "Claude-level tool calling for Gemini. Fewer tokens. Zero config.",
   "keywords": [
